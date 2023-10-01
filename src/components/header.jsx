@@ -1,5 +1,6 @@
 import { GlobeAmericas } from "react-bootstrap-icons";
 import { List } from "react-bootstrap-icons";
+import { X } from "react-bootstrap-icons";
 import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
@@ -10,6 +11,34 @@ import React from "react";
 import "./header.css";
 
 const Header = () => {
+  const togglerBtnOpen = () => {
+    const togglerOpen = document.querySelector(".togglerOpen");
+    const togglerClose = document.querySelector(".togglerClose");
+    // const togglerClose = document.querySelector(".togglerClose");
+    const columnToggler = document.querySelector(".columnToggler");
+
+    togglerOpen.classList.toggle("hide");
+
+    if (togglerOpen.classList.contains("hide")) {
+      togglerClose.classList.toggle("unhideBlock");
+      columnToggler.classList.toggle("unhideBlock");
+    }
+  };
+
+  const togglerBtnClose = () => {
+    const togglerOpen = document.querySelector(".togglerOpen");
+    const togglerClose = document.querySelector(".togglerClose");
+    const columnToggler = document.querySelector(".columnToggler");
+    togglerClose.classList.toggle("unhideBlock");
+    if (
+      togglerOpen.classList.contains("hide") &
+      columnToggler.classList.contains("unhideBlock")
+    ) {
+      togglerOpen.classList.remove("hide");
+      columnToggler.classList.remove("unhideBlock");
+    }
+  };
+
   return (
     <>
       <Row className="NavbarRow">
@@ -31,10 +60,18 @@ const Header = () => {
 
           <Button className="Button2">LOG IN</Button>
           <Button className="Button3">SIGN UP</Button>
-          <Button className="toggler">
+
+          {/* //TOOGLERS */}
+          <Button className="togglerOpen" onClick={togglerBtnOpen}>
             <List className="togglerList" color="white" size={30} />
           </Button>
+
+          <Button className="togglerClose" onClick={togglerBtnClose}>
+            <X className="togglerList" color="white" size={30} />
+          </Button>
         </Col>
+
+        {/* HIDE MENU */}
       </Row>
       <Col className="columnToggler">
         <Nav.Link className="linkToggler1" href="#">

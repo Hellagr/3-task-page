@@ -1,0 +1,13 @@
+.footerMain {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+  height: 6rem; /* Height of the footer */
+  background: rgb(32, 28, 65);
+  border: 3px solid aqua;
+  border-bottom: 0;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  padding: 20px;
+}
