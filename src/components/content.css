@@ -6,15 +6,26 @@
   align-items: center;
 }
 
+.raiseYour {
+  font-size: 22px;
+}
+
 .leftColContent {
   display: flex;
   flex-direction: column;
   font-size: 70px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.leftContentButton {
+  background-color: #478bf9;
+  width: 15rem;
+  height: 3rem;
+  border-radius: 30px;
 }
 
 .rightColContent {
+  position: absolute;
+  right: 3%;
   font: 30px bold;
   display: flex;
   flex-direction: column;
@@ -24,6 +35,7 @@
 }
 
 .cardBlog {
+  position: relative;
   margin-top: 1rem;
   padding: 0 0 1rem 1rem;
   display: block;
@@ -40,6 +52,21 @@
   width: 18rem;
   height: 24.8rem;
   overflow-y: auto;
+}
+
+.firstBlogButton {
+  width: 16rem;
+  flex-direction: column;
+  color: white;
+  height: 5rem;
+  margin-top: 1rem;
+  padding: 0.3rem 1.9rem 0.3rem 1.9rem;
+  display: flex;
+  text-align: start;
+  line-height: normal;
+  font-size: medium;
+  border: solid 2px rgb(165, 164, 233);
+  border-radius: 40px;
 }
 
 .blogButton {
@@ -89,4 +116,92 @@
   height: 20%;
   display: block;
   margin-right: 5px;
+}
+
+@media (max-width: 1040px) {
+  .rightColContent {
+    position: absolute;
+    margin-top: 16rem;
+    left: 0%;
+  }
+  .leftColContent {
+    margin-top: 16rem;
+    position: absolute;
+    right: 0%;
+  }
+}
+
+@media (max-width: 760px) {
+  .rightColContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 31rem;
+  }
+  .leftColContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 0rem;
+  }
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+    margin: 1rem 3rem 1rem 3rem;
+    align-items: center;
+  }
+}
+
+@media (max-width: 720px) {
+  .rightColContent {
+    margin-top: 26rem;
+  }
+
+  .leftColContent {
+    font-size: 50px;
+  }
+
+  .leftContentButton {
+    font-size: 13px;
+    width: 10rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .rightColContent {
+    margin-top: 26rem;
+  }
+
+  .leftColContent {
+    font-size: 40px;
+  }
+
+  .leftContentButton {
+    font-size: 13px;
+    width: 10rem;
+  }
+  .raiseYour {
+    font-size: 16px;
+  }
+  .leftContentButton {
+    height: 2.5rem;
+  }
+  .rightColContent {
+    margin-top: 23rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .leftColContent {
+    font-size: 35px;
+  }
+  .gambling {
+    margin-top: -1rem;
+  }
+  .rightColContent {
+    margin-top: 19rem;
+  }
 }

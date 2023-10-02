@@ -4,15 +4,25 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import "./content.css";
 import Animation from "./animation";
+import "./content.css";
 
 const Content = () => {
   return (
     <Row className="mainContent">
       <Col className="leftColContent">
         <Col>HOUSE OF</Col>
-        <Col style={{ color: "rgb(71 139 249)" }}>GAMBLING</Col>
+        <Col className="gambling" style={{ color: "rgb(71 139 249)" }}>
+          GAMBLING
+        </Col>
+        <Col className="raiseYour" style={{ color: "#9c9fae" }}>
+          Raise your ROI with direct advertiser
+        </Col>
+        <Col>
+          <Button variant="primary" className="leftContentButton">
+            BECOME A PARTNER
+          </Button>{" "}
+        </Col>
       </Col>
       <Col className="middleColContent">
         <Animation />
@@ -22,8 +32,8 @@ const Content = () => {
         <Card.Body className="cardBlog">
           <Card.Body className="inTheCardBody">
             <Button
-              className="blogButton"
-              variant="outline-primary"
+              className="firstBlogButton"
+              variant="primary"
               href="http://google.com"
             >
               Google Search is a search engine provided and operated by Google.
@@ -67,6 +77,7 @@ const Content = () => {
           </Card.Body>
         </Card.Body>
       </Col>
+      <Col className="empty"></Col>
     </Row>
   );
 };

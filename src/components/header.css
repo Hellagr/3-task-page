@@ -1,11 +1,12 @@
 .NavbarRow {
-  display: flex;
+  position: relative;
   justify-content: center;
   background-color: rgb(17 10 29);
   margin: 1rem 3rem 0 3rem;
   padding: 1rem;
   border: solid rgb(9, 130, 243);
   border-radius: 40px;
+  z-index: 1;
 }
 
 .NavbarColLinks {
@@ -119,6 +120,7 @@
   align-items: end;
   flex-direction: column;
   margin: 0.5rem 3rem 0 3rem;
+  z-index: 1;
 }
 
 .linkToggler1,
@@ -220,10 +222,10 @@
     padding: 0.3rem;
   }
   .columnToggler {
-    left: 0%;
-    right: 0%;
+    position: relative;
     justify-content: center;
     align-items: center;
+    z-index: 2;
   }
 
   .NavbarRow {
