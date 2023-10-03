@@ -1,5 +1,6 @@
 body {
   max-width: 100%;
+  box-sizing: border-box;
   background-color: rgb(17 10 29);
   color: white;
   font-family: "Lexend", sans-serif;

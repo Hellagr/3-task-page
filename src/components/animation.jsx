@@ -12,6 +12,7 @@ import { Github } from "react-bootstrap-icons";
 const animation = () => {
   return (
     <Row className="animationRow">
+      {/* ANIMATION 1 */}
       <Col className="animationCol1">
         <GlobeEuropeAfrica
           className="icons"
@@ -27,10 +28,19 @@ const animation = () => {
           size={60}
           style={{ color: "#466ca5" }}
         />
-        <CheckCircle className="icons" size={60} style={{ color: "#858585" }} />
         <Coin className="icons" size={60} style={{ color: "#3e5f35" }} />
-        <Github className="icons" size={60} />
+        <CheckCircle className="icons" size={60} style={{ color: "#858585" }} />
         <Shield className="icons" size={60} style={{ color: "#8c8d3f" }} />
+        <Github className="icons" size={60} />
+        <GlobeEuropeAfrica
+          className="icons"
+          size={60}
+          style={{ color: "#466ca5" }}
+        />
+        <Coin className="icons" size={60} style={{ color: "#3e5f35" }} />
+        <CheckCircle className="icons" size={60} style={{ color: "#858585" }} />
+        <Shield className="icons" size={60} style={{ color: "#8c8d3f" }} />
+        <Github className="icons" size={60} />
         <GlobeEuropeAfrica
           className="icons"
           size={60}
@@ -45,13 +55,10 @@ const animation = () => {
           size={60}
           style={{ color: "#466ca5" }}
         />
+        <Coin className="icons" size={60} style={{ color: "#3e5f35" }} />
         <CheckCircle className="icons" size={60} style={{ color: "#858585" }} />
-        <Coin className="icons" size={60} style={{ color: "#3e5f35" }} />
-        <Github className="icons" size={60} />
         <Shield className="icons" size={60} style={{ color: "#8c8d3f" }} />
-        <Coin className="icons" size={60} style={{ color: "#3e5f35" }} />
         <Github className="icons" size={60} />
-        <Shield className="icons" size={60} style={{ color: "#8c8d3f" }} />
         <GlobeEuropeAfrica
           className="icons"
           size={60}
@@ -60,33 +67,19 @@ const animation = () => {
         <Coin className="icons" size={60} style={{ color: "#3e5f35" }} />
         <CheckCircle className="icons" size={60} style={{ color: "#858585" }} />
         <Shield className="icons" size={60} style={{ color: "#8c8d3f" }} />
+        <Github className="icons" size={60} />
       </Col>
+
+      {/* ANIMATION 2 */}
       <Col className="animationCol2">
-        <GlobeEuropeAfrica
-          className="icons"
-          size={60}
-          style={{ color: "#466ca5" }}
-        />
         <Github className="icons" size={60} />
-        <Shield className="icons" size={60} style={{ color: "#8c8d3f" }} />
-        <CheckCircle className="icons" size={60} style={{ color: "#858585" }} />
-        <Coin className="icons" size={60} style={{ color: "#3e5f35" }} />
-        <Github className="icons" size={60} />
-        <Shield className="icons" size={60} style={{ color: "#8c8d3f" }} />
-        <Coin className="icons" size={60} style={{ color: "#3e5f35" }} />
         <GlobeEuropeAfrica
           className="icons"
           size={60}
           style={{ color: "#466ca5" }}
         />
         <CheckCircle className="icons" size={60} style={{ color: "#858585" }} />
-        <GlobeEuropeAfrica
-          className="icons"
-          size={60}
-          style={{ color: "#466ca5" }}
-        />
         <Coin className="icons" size={60} style={{ color: "#3e5f35" }} />
-        <CheckCircle className="icons" size={60} style={{ color: "#858585" }} />
         <Shield className="icons" size={60} style={{ color: "#8c8d3f" }} />
         <Github className="icons" size={60} />
         <GlobeEuropeAfrica
@@ -96,20 +89,46 @@ const animation = () => {
         />
         <CheckCircle className="icons" size={60} style={{ color: "#858585" }} />
         <Coin className="icons" size={60} style={{ color: "#3e5f35" }} />
-        <Github className="icons" size={60} />
         <Shield className="icons" size={60} style={{ color: "#8c8d3f" }} />
-        <Coin className="icons" size={60} style={{ color: "#3e5f35" }} />
         <Github className="icons" size={60} />
-        <Shield className="icons" size={60} style={{ color: "#8c8d3f" }} />
         <GlobeEuropeAfrica
           className="icons"
           size={60}
           style={{ color: "#466ca5" }}
         />
-        <Coin className="icons" size={60} style={{ color: "#3e5f35" }} />
         <CheckCircle className="icons" size={60} style={{ color: "#858585" }} />
+        <Coin className="icons" size={60} style={{ color: "#3e5f35" }} />
+        <Shield className="icons" size={60} style={{ color: "#8c8d3f" }} />
+        <Github className="icons" size={60} />
+        <GlobeEuropeAfrica
+          className="icons"
+          size={60}
+          style={{ color: "#466ca5" }}
+        />
+        <CheckCircle className="icons" size={60} style={{ color: "#858585" }} />
+        <Coin className="icons" size={60} style={{ color: "#3e5f35" }} />
+        <Shield className="icons" size={60} style={{ color: "#8c8d3f" }} />
+        <Github className="icons" size={60} />
+        <GlobeEuropeAfrica
+          className="icons"
+          size={60}
+          style={{ color: "#466ca5" }}
+        />
+        <CheckCircle className="icons" size={60} style={{ color: "#858585" }} />
+        <Coin className="icons" size={60} style={{ color: "#3e5f35" }} />
+        <Shield className="icons" size={60} style={{ color: "#8c8d3f" }} />
+        <Github className="icons" size={60} />
+        <GlobeEuropeAfrica
+          className="icons"
+          size={60}
+          style={{ color: "#466ca5" }}
+        />
+        <CheckCircle className="icons" size={60} style={{ color: "#858585" }} />
+        <Coin className="icons" size={60} style={{ color: "#3e5f35" }} />
         <Shield className="icons" size={60} style={{ color: "#8c8d3f" }} />
       </Col>
+
+      {/* ANIMATION 3 */}
       <Col className="animationCol3">
         <Github className="icons" size={60} />
         <GlobeEuropeAfrica
@@ -119,40 +138,51 @@ const animation = () => {
         />
         <CheckCircle className="icons" size={60} style={{ color: "#858585" }} />
         <Coin className="icons" size={60} style={{ color: "#3e5f35" }} />
-        <Github className="icons" size={60} />
         <Shield className="icons" size={60} style={{ color: "#8c8d3f" }} />
-        <Coin className="icons" size={60} style={{ color: "#3e5f35" }} />
         <Github className="icons" size={60} />
-        <Shield className="icons" size={60} style={{ color: "#8c8d3f" }} />
         <GlobeEuropeAfrica
           className="icons"
           size={60}
           style={{ color: "#466ca5" }}
         />
-        <Coin className="icons" size={60} style={{ color: "#3e5f35" }} />
         <CheckCircle className="icons" size={60} style={{ color: "#858585" }} />
-        <Shield className="icons" size={60} style={{ color: "#8c8d3f" }} />
         <Coin className="icons" size={60} style={{ color: "#3e5f35" }} />
-        <Github className="icons" size={60} />
         <Shield className="icons" size={60} style={{ color: "#8c8d3f" }} />
+        <Github className="icons" size={60} />
         <GlobeEuropeAfrica
           className="icons"
           size={60}
           style={{ color: "#466ca5" }}
         />
-        <Coin className="icons" size={60} style={{ color: "#3e5f35" }} />
         <CheckCircle className="icons" size={60} style={{ color: "#858585" }} />
-        <Shield className="icons" size={60} style={{ color: "#8c8d3f" }} />
         <Coin className="icons" size={60} style={{ color: "#3e5f35" }} />
-        <Github className="icons" size={60} />
         <Shield className="icons" size={60} style={{ color: "#8c8d3f" }} />
+        <Github className="icons" size={60} />
         <GlobeEuropeAfrica
           className="icons"
           size={60}
           style={{ color: "#466ca5" }}
         />
-        <Coin className="icons" size={60} style={{ color: "#3e5f35" }} />
         <CheckCircle className="icons" size={60} style={{ color: "#858585" }} />
+        <Coin className="icons" size={60} style={{ color: "#3e5f35" }} />
+        <Shield className="icons" size={60} style={{ color: "#8c8d3f" }} />
+        <Github className="icons" size={60} />
+        <GlobeEuropeAfrica
+          className="icons"
+          size={60}
+          style={{ color: "#466ca5" }}
+        />
+        <CheckCircle className="icons" size={60} style={{ color: "#858585" }} />
+        <Coin className="icons" size={60} style={{ color: "#3e5f35" }} />
+        <Shield className="icons" size={60} style={{ color: "#8c8d3f" }} />
+        <Github className="icons" size={60} />
+        <GlobeEuropeAfrica
+          className="icons"
+          size={60}
+          style={{ color: "#466ca5" }}
+        />
+        <CheckCircle className="icons" size={60} style={{ color: "#858585" }} />
+        <Coin className="icons" size={60} style={{ color: "#3e5f35" }} />
         <Shield className="icons" size={60} style={{ color: "#8c8d3f" }} />
       </Col>
     </Row>

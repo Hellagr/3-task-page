@@ -4,7 +4,7 @@
 
 .animationCol1 {
   position: absolute;
-  top: 0rem;
+  top: -21.5rem;
   right: 53%;
   opacity: 40%;
   flex-direction: column;
@@ -13,11 +13,11 @@
   align-content: space-between;
   padding: 0%;
   animation: animationCol1;
-  animation-duration: 4s;
-  animation-timing-function: ease-in-out;
+  animation-duration: 10s;
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-delay: 1s;
-  animation-direction: alternate;
+
+  animation-direction: normal;
 }
 
 .icons {
@@ -26,35 +26,33 @@
 
 .animationCol2 {
   position: absolute;
-  top: 0rem;
+  top: -21.5rem;
   right: 0%;
   flex-direction: column;
   display: flex;
   align-items: center;
   padding: 0%;
   animation: animationCol1;
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
+  animation-duration: 5s;
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-delay: 1s;
-  animation-direction: alternate-reverse;
+
+  animation-direction: reverse;
 }
 
 .animationCol3 {
   opacity: 75%;
   position: absolute;
-  top: 0rem;
+  top: -21.5rem;
   right: -53%;
   align-items: start;
   flex-direction: column;
   padding: 0%;
   display: flex;
   animation: animationCol1;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
+  animation-duration: 8s;
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-delay: 1s;
-  animation-direction: alternate;
 }
 
 @keyframes animationCol1 {
@@ -62,7 +60,7 @@
     transform: translateY(0rem);
   }
   to {
-    transform: translateY(4rem);
+    transform: translateY(26.2rem);
   }
 }
 
@@ -79,51 +77,58 @@
 }
 
 @media (max-width: 1040px) {
-  .animationCol3 {
-    flex-direction: row;
-    left: -10%;
-    top: 5rem;
-
-    animation: animationCol;
-    animation-duration: 4s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-delay: 1s;
-    animation-direction: alternate;
-  }
-  .animationCol2 {
-    flex-direction: row;
-    left: -10%;
-    top: 9.5rem;
-
-    animation: animationCol;
-    animation-duration: 3s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-delay: 1s;
-    animation-direction: alternate-reverse;
-  }
   .animationCol1 {
+    display: flex;
+    flex-wrap: nowrap;
+    top: 0;
+    left: -40rem;
     flex-direction: row;
-    left: -10%;
-    top: 14rem;
+    position: relative;
     animation: animationCol;
-    animation-duration: 6s;
-    animation-timing-function: ease-in-out;
+    animation-duration: 10s;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-delay: 1s;
-    animation-direction: alternate;
+    animation-direction: normal;
+  }
+
+  .animationCol2 {
+    display: flex;
+    flex-wrap: nowrap;
+    top: 0;
+    left: -40rem;
+    flex-direction: row;
+    position: relative;
+    animation: animationCol;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+  }
+
+  .animationCol3 {
+    display: flex;
+    flex-wrap: nowrap;
+    top: 0;
+    left: -40rem;
+    flex-direction: row;
+    position: relative;
+    animation: animationCol;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  .icons {
+    margin-top: 1rem;
+    margin-right: 0.4rem;
   }
 
   .animationRow {
-    top: 0%;
-    left: -20%;
-    position: fixed;
-    display: block;
     width: 300%;
-  }
-  .icons {
-    margin-left: 0.5rem;
+    padding: 0;
+    display: block;
+    position: relative;
+    top: -14rem;
   }
 
   @keyframes animationCol {
@@ -131,107 +136,60 @@
       transform: translateX(0rem);
     }
     to {
-      transform: translateX(4rem);
+      transform: translateX(20.8rem);
     }
   }
 }
+
 @media (max-width: 760px) {
-  .animationCol3 {
-    top: 19rem;
-    right: -56%;
-  }
-  .animationCol2 {
-    top: 22rem;
-    right: -3%;
-  }
-  .animationCol1 {
-    top: 25rem;
-    right: 50%;
-  }
-
   .animationRow {
-    top: 0%;
-    left: -20%;
+    width: 400%;
+    top: 14rem;
+    padding: 0;
     position: relative;
-    display: flex;
-    width: 200%;
   }
 }
 
-@media (max-width: 720px) {
-  .animationCol3 {
-    top: 14rem;
-    right: -56%;
-  }
-  .animationCol2 {
-    top: 17rem;
-    right: -3%;
-  }
-  .animationCol1 {
-    top: 20rem;
-    right: 50%;
-  }
+@media (max-width: 580px) {
   .animationRow {
-    width: 230%;
-  }
-}
-
-@media (max-width: 620px) {
-  .animationCol3 {
-    top: 11rem;
-    right: -56%;
-  }
-  .animationCol2 {
     top: 14rem;
-    right: -3%;
-  }
-  .animationCol1 {
-    top: 17rem;
-    right: 50%;
-  }
-  .animationRow {
-    width: 290%;
+    width: 600%;
   }
 }
 
 @media (max-width: 460px) {
-  .animationRow {
-    width: 400%;
-  }
-}
+  .icons {
+    width: 40px;
 
-@media (max-width: 430px) {
+    margin-top: 0rem;
+    margin-bottom: -0.2rem;
+  }
   .animationRow {
-    width: 400%;
-  }
-}
-
-@media (max-width: 420px) {
-  .animationCol3 {
-    top: 9rem;
-    right: -56%;
-  }
-  .animationCol2 {
-    top: 11.5rem;
-    right: -3%;
-  }
-  .animationCol1 {
     top: 14rem;
-    right: 50%;
-  }
-  .animationRow {
     width: 400%;
   }
-}
-
-@media (max-width: 350px) {
-  .animationRow {
-    width: 500%;
+  @keyframes animationCol {
+    from {
+      transform: translateX(0rem);
+    }
+    to {
+      transform: translateX(14.5rem);
+    }
   }
 }
 
-@media (max-width: 320px) {
-  .animationRow {
-    width: 500%;
+@media (max-width: 380px) {
+  .icons {
+    width: 30px;
+    margin-top: 0rem;
+    margin-bottom: -1rem;
+  }
+  @keyframes animationCol {
+    from {
+      transform: translateX(0rem);
+    }
+    to {
+      transform: translateX(11.4rem);
+    }
   }
 }

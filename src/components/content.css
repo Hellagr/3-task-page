@@ -2,8 +2,9 @@
   display: flex;
   flex-direction: row;
   height: 40rem;
-  margin: 1rem 3rem 1rem 3rem;
+  margin: 1rem 0 1rem 0;
   align-items: center;
+  overflow: hidden;
 }
 
 .raiseYour {
@@ -11,9 +12,10 @@
 }
 
 .leftColContent {
-  display: flex;
+  position: absolute;
   flex-direction: column;
   font-size: 70px;
+  left: 3%;
 }
 
 .leftContentButton {
@@ -127,7 +129,7 @@
   .leftColContent {
     margin-top: 16rem;
     position: absolute;
-    right: 0%;
+    left: 0%;
   }
 }
 
@@ -137,7 +139,7 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin-top: 31rem;
+    margin-top: 30rem;
   }
   .leftColContent {
     display: flex;
@@ -145,36 +147,32 @@
     align-items: center;
     align-content: center;
     margin-top: 0rem;
-  }
-  .mainContent {
-    display: flex;
-    flex-direction: column;
-    height: 40rem;
-    margin: 1rem 3rem 1rem 3rem;
-    align-items: center;
-  }
-}
-
-@media (max-width: 720px) {
-  .rightColContent {
-    margin-top: 26rem;
-  }
-
-  .leftColContent {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .leftContentButton {
     font-size: 13px;
     width: 10rem;
   }
+
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+    align-items: center;
+  }
 }
 
-@media (max-width: 620px) {
-  .rightColContent {
-    margin-top: 26rem;
+@media (max-width: 460px) {
+  .raiseYour {
+    font-size: 15px;
   }
+  .rightColContent {
+    margin-top: 25rem;
+  }
+}
 
+@media (max-width: 420px) {
   .leftColContent {
     font-size: 40px;
   }
@@ -190,18 +188,12 @@
     height: 2.5rem;
   }
   .rightColContent {
-    margin-top: 23rem;
+    margin-top: 25rem;
   }
 }
 
-@media (max-width: 420px) {
-  .leftColContent {
-    font-size: 35px;
-  }
-  .gambling {
-    margin-top: -1rem;
-  }
+@media (max-width: 380px) {
   .rightColContent {
-    margin-top: 19rem;
+    margin-top: 24rem;
   }
 }

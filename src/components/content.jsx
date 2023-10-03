@@ -77,7 +77,6 @@ const Content = () => {
           </Card.Body>
         </Card.Body>
       </Col>
-      <Col className="empty"></Col>
     </Row>
   );
 };
