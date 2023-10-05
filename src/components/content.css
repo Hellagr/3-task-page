@@ -1,9 +1,6 @@
 .mainContent {
-  display: flex;
-  flex-direction: row;
-  height: 40rem;
+  height: 100%;
   margin: 1rem 0 1rem 0;
-  align-items: center;
   overflow: hidden;
 }
 
@@ -12,10 +9,18 @@
 }
 
 .leftColContent {
+  width: max-content;
   position: absolute;
+  top: 18rem;
+  display: flex;
+  align-items: start;
+  align-content: start;
+  justify-content: center;
   flex-direction: column;
+  flex-wrap: wrap;
   font-size: 70px;
   left: 3%;
+  z-index: 2;
 }
 
 .leftContentButton {
@@ -23,10 +28,17 @@
   width: 15rem;
   height: 3rem;
   border-radius: 30px;
+  transition: 0.3s;
+}
+
+.leftContentButton:hover {
+  background-color: #334568;
 }
 
 .rightColContent {
+  width: max-content;
   position: absolute;
+  top: 13rem;
   right: 3%;
   font: 30px bold;
   display: flex;
@@ -88,7 +100,7 @@
 }
 
 .blogButton:hover {
-  background-color: rgb(1, 1, 54);
+  background-color: #334568;
 }
 
 ::-webkit-scrollbar {
@@ -120,46 +132,60 @@
   margin-right: 5px;
 }
 
+.firstBlogButton,
+.blogButton {
+  transition: 0.3s;
+}
+
 @media (max-width: 1040px) {
   .rightColContent {
+    top: 21.5rem;
     position: absolute;
-    margin-top: 16rem;
-    left: 0%;
+    right: 0%;
   }
   .leftColContent {
-    margin-top: 16rem;
+    top: 24rem;
     position: absolute;
     left: 0%;
+  }
+  .middleColContent {
+    position: absolute;
+    top: 6rem;
   }
 }
 
 @media (max-width: 760px) {
-  .rightColContent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin-top: 30rem;
-  }
   .leftColContent {
     display: flex;
-    justify-content: center;
+    position: relative;
+    top: 0;
     align-items: center;
     align-content: center;
-    margin-top: 0rem;
     font-size: 40px;
+    z-index: 2;
   }
 
   .leftContentButton {
+    display: inline;
     font-size: 13px;
+    position: relative;
     width: 10rem;
   }
 
+  .rightColContent {
+    position: relative;
+    align-content: center;
+    top: 1rem;
+  }
+
   .mainContent {
-    display: flex;
-    flex-direction: column;
-    height: 40rem;
-    align-items: center;
+    margin: 0;
+    padding-bottom: 3rem;
+  }
+
+  .middleColContent {
+    top: 0rem;
+    position: relative;
   }
 }
 
@@ -167,8 +193,11 @@
   .raiseYour {
     font-size: 15px;
   }
+  .mainContent {
+    height: 54rem;
+  }
   .rightColContent {
-    margin-top: 25rem;
+    margin-top: 0rem;
   }
 }
 
@@ -180,20 +209,13 @@
   .leftContentButton {
     font-size: 13px;
     width: 10rem;
+    height: 2.5rem;
   }
   .raiseYour {
     font-size: 16px;
   }
-  .leftContentButton {
-    height: 2.5rem;
-  }
-  .rightColContent {
-    margin-top: 25rem;
-  }
-}
 
-@media (max-width: 380px) {
   .rightColContent {
-    margin-top: 24rem;
+    margin-top: 0rem;
   }
 }

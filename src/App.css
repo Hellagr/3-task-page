@@ -1,5 +1,17 @@
+html,
+body,
+#root,
+.bodyclass {
+  height: max-content;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 body {
-  max-width: 100%;
+  min-height: 100%;
+  flex-direction: column;
+
   box-sizing: border-box;
   background-color: rgb(17 10 29);
   color: white;

@@ -80,7 +80,7 @@
   .animationCol1 {
     display: flex;
     flex-wrap: nowrap;
-    top: 0;
+    top: 23.5rem;
     left: -40rem;
     flex-direction: row;
     position: relative;
@@ -94,7 +94,7 @@
   .animationCol2 {
     display: flex;
     flex-wrap: nowrap;
-    top: 0;
+    top: 14rem;
     left: -40rem;
     flex-direction: row;
     position: relative;
@@ -108,7 +108,7 @@
   .animationCol3 {
     display: flex;
     flex-wrap: nowrap;
-    top: 0;
+    top: 4.5rem;
     left: -40rem;
     flex-direction: row;
     position: relative;
@@ -144,7 +144,6 @@
 @media (max-width: 760px) {
   .animationRow {
     width: 400%;
-    top: 14rem;
     padding: 0;
     position: relative;
   }
@@ -152,7 +151,7 @@
 
 @media (max-width: 580px) {
   .animationRow {
-    top: 14rem;
+    top: -14rem;
     width: 600%;
   }
 }
@@ -160,36 +159,28 @@
 @media (max-width: 460px) {
   .icons {
     width: 40px;
-
     margin-top: 0rem;
     margin-bottom: -0.2rem;
   }
   .animationRow {
-    top: 14rem;
-    width: 400%;
+    top: -14rem;
+    width: 500%;
   }
+
+  .animationCol1 {
+    top: 21rem;
+  }
+
+  .animationCol3 {
+    top: 7rem;
+  }
+
   @keyframes animationCol {
     from {
       transform: translateX(0rem);
     }
     to {
       transform: translateX(14.5rem);
-    }
-  }
-}
-
-@media (max-width: 380px) {
-  .icons {
-    width: 30px;
-    margin-top: 0rem;
-    margin-bottom: -1rem;
-  }
-  @keyframes animationCol {
-    from {
-      transform: translateX(0rem);
-    }
-    to {
-      transform: translateX(11.4rem);
     }
   }
 }

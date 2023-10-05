@@ -2,12 +2,150 @@
   position: fixed;
   bottom: 0;
   width: 100%;
+  align-items: flex-end;
   margin: auto;
   height: 6rem;
-  background: rgb(32, 28, 65);
+  background: #1e1231;
   border: 3px solid aqua;
   border-bottom: 0;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   padding: 20px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1.9rem;
+}
+
+.links a {
+  display: flex;
+  white-space: nowrap;
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  padding-right: 1rem;
+}
+
+.links a:hover {
+  color: #478bf9;
+}
+
+.links a:active {
+  text-decoration: underline;
+  color: #478bf9;
+}
+
+.links a:focus {
+  text-decoration: underline;
+  color: #478bf9;
+}
+
+.ourSocLink {
+  display: flex;
+  justify-content: end;
+}
+.iconsSocLink {
+  display: flex;
+  justify-content: end;
+}
+
+.iconsSoc {
+  box-sizing: content-box;
+
+  padding-left: 0.5rem;
+  padding-top: 0.3rem;
+}
+
+.iconsSoc:hover {
+  color: #478bf9;
+}
+.iconsSoc:active {
+  color: #478bf9;
+}
+
+.footerMain,
+.links,
+.links a,
+.iconsSoc {
+  transition: 0.3s;
+}
+
+@media (max-width: 760px) {
+  .footerMain {
+    position: relative;
+    bottom: 0;
+  }
+  .links {
+    padding-top: 0rem;
+    flex-wrap: wrap;
+  }
+  .links a {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 620px) {
+  .links {
+    display: block;
+  }
+
+  .links a {
+    padding-bottom: 0.3rem;
+  }
+
+  .footerMain {
+    height: 11rem;
+  }
+  .socialicons {
+    margin-top: 3rem;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-content: flex-end;
+  }
+}
+
+@media (max-width: 460px) {
+  .footerMain {
+    height: 14rem;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .socialicons {
+    margin-top: 0rem;
+    justify-content: start;
+    align-content: start;
+  }
+
+  .ourSocLink {
+    justify-content: start;
+    align-items: center;
+  }
+
+  .links {
+    justify-content: start;
+    align-items: start;
+  }
+
+  .links a {
+    font-size: 14px;
+    padding-bottom: 0.3rem;
+  }
+
+  .iconsSoc {
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    padding-right: 0.3rem;
+  }
+
+  .iconsSocLink {
+    justify-content: start;
+  }
 }

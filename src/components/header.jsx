@@ -3,6 +3,7 @@ import { List } from "react-bootstrap-icons";
 import { X } from "react-bootstrap-icons";
 import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
+import Dropdown from "react-bootstrap/Dropdown";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
@@ -14,7 +15,6 @@ const Header = () => {
   const togglerBtnOpen = () => {
     const togglerOpen = document.querySelector(".togglerOpen");
     const togglerClose = document.querySelector(".togglerClose");
-    // const togglerClose = document.querySelector(".togglerClose");
     const columnToggler = document.querySelector(".columnToggler");
 
     togglerOpen.classList.toggle("hide");
@@ -39,6 +39,23 @@ const Header = () => {
     }
   };
 
+  function changeLang() {
+    const dropDownMenu1 = document.querySelector(".dropDownMenu1");
+    const dropDownMenu2 = document.querySelector(".dropDownMenu2");
+    const dropMenu = document.querySelector(".dropmenu");
+    console.log(dropMenu.style.display);
+    if (
+      dropDownMenu1.classList.contains("unhideBlock") &
+      !dropMenu.classList.contains("show")
+    ) {
+      dropDownMenu1.classList.toggle("unhideBlock");
+      dropDownMenu2.classList.toggle("unhideBlock");
+    } else {
+      dropDownMenu1.classList.toggle("unhideBlock");
+      dropDownMenu2.classList.toggle("unhideBlock");
+    }
+  }
+
   return (
     <>
       <Row className="NavbarRow">
@@ -51,12 +68,62 @@ const Header = () => {
           <Nav.Link href="#">Contact us</Nav.Link>
           <Nav.Link href="#">Careers</Nav.Link>
         </Col>
-        <Col className="NavbarColButtons">
-          <Button className="Button1">
-            <GlobeAmericas className="langicon" /> EN
-          </Button>
 
-          <GlobeAmericas className="langIconToggle" color="white" size={35} />
+        {/* LANGUAGE TOGGLE */}
+
+        <Col className="NavbarColButtons">
+          <Col className="dropDownMenu1 unhideBlock">
+            <Dropdown>
+              <Dropdown.Toggle className="ButtonEng" id="dropdown-basic">
+                <GlobeAmericas className="langicon" /> EN
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu className="dropmenu">
+                <Dropdown.Item
+                  className="dropitem"
+                  href="#"
+                  onClick={changeLang}
+                >
+                  RU
+                </Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+          </Col>
+          <Col className="dropDownMenu2">
+            <Dropdown>
+              <Dropdown.Toggle className="ButtonRu" id="dropdown-basic">
+                <GlobeAmericas className="langicon" /> RU
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu className="dropmenu">
+                <Dropdown.Item
+                  className="dropitem"
+                  href="#"
+                  onClick={changeLang}
+                >
+                  EN
+                </Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+          </Col>
+
+          {/* LANGUAGE TOOGLE ICON */}
+
+          <Col className="colForButtonLang">
+            <Dropdown>
+              <Dropdown.Toggle className="buttonForLang" id="dropdown-basic">
+                <GlobeAmericas color="white" className="langIcon2" size={24} />
+              </Dropdown.Toggle>
+              <Dropdown.Menu className="dropmenu2">
+                <Dropdown.Item className="dropitem" href="#">
+                  EN
+                </Dropdown.Item>
+                <Dropdown.Item className="dropitem" href="#">
+                  RU
+                </Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+          </Col>
 
           <Button className="Button2">LOG IN</Button>
           <Button className="Button3">SIGN UP</Button>
